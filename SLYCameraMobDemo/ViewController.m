@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "SLYCameraMob.h"
 
 @interface ViewController ()
 
