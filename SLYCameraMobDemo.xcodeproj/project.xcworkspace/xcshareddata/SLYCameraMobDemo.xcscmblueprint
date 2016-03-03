@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "6F8C6A99E5BE2D32103FE8688A8FF89EDCF1D437",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "45A69731C5F57EE0179C0ACEB1C572411FDB20E1" : 0,
+    "6F8C6A99E5BE2D32103FE8688A8FF89EDCF1D437" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "B801E00C-1FBC-4BF2-BA64-0F1AEDFA8DE4",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "45A69731C5F57EE0179C0ACEB1C572411FDB20E1" : "..\/SLYCameraMob",
+    "6F8C6A99E5BE2D32103FE8688A8FF89EDCF1D437" : "SLYCameraMobDemo\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "SLYCameraMobDemo",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "SLYCameraMobDemo.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/sherwin_chen\/slycameramob.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "45A69731C5F57EE0179C0ACEB1C572411FDB20E1"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/chensheng12330\/SLYCameraMobDemo.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6F8C6A99E5BE2D32103FE8688A8FF89EDCF1D437"
+    }
+  ]
+}
