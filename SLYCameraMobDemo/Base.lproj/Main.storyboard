@@ -78,6 +78,123 @@
                                     <action selector="btnDelFile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jS4-gX-K7D"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1sz-QS-YEr">
+                                <rect key="frame" x="1" y="375" width="117" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="设置时间" backgroundImage="btn_red"/>
+                                <connections>
+                                    <action selector="setDataTime:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ifi-JZ-Gc8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bnm-OW-Pp4">
+                                <rect key="frame" x="1" y="328" width="348" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="获取设备设置" backgroundImage="btn_red"/>
+                                <connections>
+                                    <action selector="getAllSetting:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pd4-Og-Xfw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TKt-RY-aDC">
+                                <rect key="frame" x="126" y="375" width="126" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="参数设置测试" backgroundImage="btn_red"/>
+                                <connections>
+                                    <action selector="actionCameraSetting:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mft-NG-e25"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="q9D-3O-7xQ">
+                                <rect key="frame" x="63" y="423" width="224" height="29"/>
+                                <segments>
+                                    <segment title="14"/>
+                                    <segment title="12"/>
+                                    <segment title="8"/>
+                                    <segment title="5"/>
+                                    <segment title="3"/>
+                                    <segment title="2"/>
+                                </segments>
+                                <connections>
+                                    <action selector="imageValueCh:" destination="BYZ-38-t0r" eventType="valueChanged" id="kS6-Wg-gYF"/>
+                                </connections>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="lVI-wW-MYX">
+                                <rect key="frame" x="63" y="459" width="224" height="29"/>
+                                <segments>
+                                    <segment title="50"/>
+                                    <segment title="60"/>
+                                </segments>
+                                <connections>
+                                    <action selector="imageValueCh:" destination="BYZ-38-t0r" eventType="valueChanged" id="5IH-IF-WCH"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="图像参数" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5h1-OL-7Q1">
+                                <rect key="frame" x="1" y="426" width="60" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="频率" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LsR-ZF-Vdt">
+                                <rect key="frame" x="0.0" y="466" width="60" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="JAM-rq-uIH">
+                                <rect key="frame" x="64" y="495" width="224" height="29"/>
+                                <segments>
+                                    <segment title="Auto"/>
+                                    <segment title="Daylight"/>
+                                    <segment title="Cloudy"/>
+                                </segments>
+                                <connections>
+                                    <action selector="imageValueCh:" destination="BYZ-38-t0r" eventType="valueChanged" id="b2Z-IZ-rzc"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="白平衡" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bsx-3z-Mqo">
+                                <rect key="frame" x="1" y="500" width="60" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="KmB-02-mCa">
+                                <rect key="frame" x="65" y="531" width="223" height="29"/>
+                                <segments>
+                                    <segment title="Off"/>
+                                    <segment title="Low"/>
+                                    <segment title="Middle"/>
+                                    <segment title="High"/>
+                                </segments>
+                                <connections>
+                                    <action selector="imageValueCh:" destination="BYZ-38-t0r" eventType="valueChanged" id="coJ-jw-RZI"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="紧急灵敏度" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eYa-Ws-4xp">
+                                <rect key="frame" x="0.0" y="535" width="65" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="曝光值" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D40-74-rUN">
+                                <rect key="frame" x="1" y="571" width="65" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="DLV-P1-bL9">
+                                <rect key="frame" x="51" y="568" width="319" height="29"/>
+                                <segments>
+                                    <segment title="200"/>
+                                    <segment title="167"/>
+                                    <segment title="133"/>
+                                    <segment title="100"/>
+                                    <segment title="067"/>
+                                    <segment title="033"/>
+                                    <segment title="0"/>
+                                    <segment title="033"/>
+                                </segments>
+                                <connections>
+                                    <action selector="imageValueCh:" destination="BYZ-38-t0r" eventType="valueChanged" id="EP1-YN-NsQ"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -89,7 +206,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-826.5" y="363.5"/>
+            <point key="canvasLocation" x="-1358.5" y="256.5"/>
         </scene>
     </scenes>
     <resources>
