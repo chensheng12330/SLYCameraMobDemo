@@ -1,4 +1,4 @@
-//
+ //
 //  ViewController.m
 //  SLYCameraMobDemo
 //
@@ -49,6 +49,17 @@
     [self log:@"准备就绪..."];
     [SLYConnMan addDelegate:self];
     [SLYDevMan addDelegate:self];
+    [SLYDevMan addDelegate:self];
+    [SLYDevMan addDelegate:self];
+    [SLYDevMan addDelegate:self];
+    
+    /*
+    for (double i=0; i<(2*M_PI); i=i+(M_PI/6.0)) {
+        double dSin = sin(i);
+        NSLog(@"i=%lf  dSin=%lf",i,dSin);
+    }*/
+    
+    return;
 }
 
 - (void)dealloc
@@ -123,7 +134,7 @@
 
 
 - (IBAction)btnGetFileList:(id)sender {
-    [SLYDevMan asyncGetFileListWithCount:40 From:0];
+    [SLYDevMan asyncGetFileListWithCount:30 From:0];
 }
 
 - (void)didGetFileList:(NSArray*)fileList
@@ -171,6 +182,8 @@
     [SLYDevMan asyncQueryCameraSettings];
 }
 
+//////////
+
 - (void)didQueryCameraSettings:(SLYCameraInfo*) cameraInfo
                          error:(EMError *)error
 {
@@ -180,13 +193,29 @@
 }
 
 ///////////
-
+#warning 测试功能函数
 - (IBAction)actionCameraSetting:(id)sender {
     
     //无法使用
-   // [SLYDevMan asyncSetVideoRes:!eCA_VideoRes_1080P30fps];
+    //[SLYDevMan asyncSetVideoRes:!eCA_VideoRes_1080P30fps];
     
-    [SLYDevMan asyncSetImageRes:eCA_ImageRes_5M];
+    //[SLYDevMan asyncGetCameraRecordStatus];
+    
+    //[SLYDevMan asyncSetImageRes:eCA_ImageRes_5M];
+    [SLYConnMan asyncChangeWiFiWithSSID:@"XCar_002" Password:@"123456789"];
+    
+}
+
+-(void)didChangeWiFiInfo:(SLYWiFiInfo *)connectWiFiInfo error:(EMError *)error
+{
+    if (error) {
+        NSLog(@"%@",error);
+    }
+    else{
+        [SLYConnMan asyncReactivateDevice];
+    }
+    
+    return;
 }
 
 - (void)didSetVideoRes:(CAMERA_VideoRes) videoRes
@@ -285,4 +314,113 @@
         NSLog(@"%@",error);
     }
 }
+
+- (IBAction)actionReactivateDevice:(id)sender {
+    [SLYConnMan asyncReactivateDevice];
+}
+
+- (IBAction)videoRecoderControl:(UISegmentedControl *)sender {
+    
+    if (sender.selectedSegmentIndex ==0) {
+        //查询录像状态
+        [SLYDevMan asyncGetCameraRecordStatus];
+    }
+    else if (sender.selectedSegmentIndex ==1) {
+        //开始
+        //[SLYDevMan asyncGetCameraDateTime];
+        [SLYDevMan asyncStartCameraRecord];
+    }
+    else if (sender.selectedSegmentIndex ==2) {
+        //停止
+        [SLYDevMan asyncStopCameraRecord];
+    }
+    
+    return;
+}
+
+-(void) didGetCameraRecordStatus:(CAMERA_RecordStatus)recordStatus error:(EMError *)error
+{
+    
+}
+
+
+
+
+
+-(void) didStartCameraRecord:(EMError *)error
+{
+    
+}
+
+-(void) didStopCameraRecord:(EMError *)error
+{
+    
+}
+
+
+- (IBAction)startAutoConnet:(UIButton *)sender {
+    
+    [SLYConnMan asyncStartAutoConnect];
+    
+}
+
+- (void)didAutoConnectWithError:(EMError *)error
+{
+    if (error) {
+        NSLog(@"------------------------------");
+        NSLog(@"----->设备断开连接..%@",error);
+         NSLog(@"------------------------------");
+    }
+    else{
+         NSLog(@"------------------------------");
+        NSLog(@"----->设备已自动连接.....");
+         NSLog(@"------------------------------");
+    }
+}
+
+
+/*!
+ @method
+ @brief 自动重连操作完成后的回调（成功的话，error为nil，失败的话，查看error的错误信息）
+ @discussion
+ @result
+ */
+- (void)didStopAutoReconnect
+{
+    
+}
+
+
+- (IBAction)actionCameraSwitch:(UISegmentedControl*)sender {
+    
+    if (sender.selectedSegmentIndex ==0) {
+        //使用前摄像头
+        [SLYDevMan asyncSwitchCamera:eCA_Head_Front];
+    }
+    else if (sender.selectedSegmentIndex ==1) {
+        //后摄像头
+        //[SLYDevMan asyncGetCameraDateTime];
+        [SLYDevMan asyncSwitchCamera:eCA_Head_Rear];
+    }
+    else if (sender.selectedSegmentIndex ==2) {
+        //查询
+        [SLYDevMan asyncGetCameraHead];
+    }
+    
+    return;
+}
+
+-(void)didSwitchCamera:(CAMERA_Head) camer_head
+                 error:(EMError *)error
+{
+    
+}
+
+
+-(void)didGetCameraHead:(CAMERA_Head) camer_head
+                  error:(EMError *)error
+{
+    
+}
+
 @end

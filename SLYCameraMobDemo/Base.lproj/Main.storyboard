@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -25,7 +25,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zxN-TM-dws">
-                                <rect key="frame" x="0.0" y="95" width="192" height="30"/>
+                                <rect key="frame" x="0.0" y="95" width="118" height="30"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="连接设备" backgroundImage="btn_red"/>
                                 <connections>
@@ -47,7 +47,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qAh-69-tzF">
-                                <rect key="frame" x="195" y="95" width="180" height="30"/>
+                                <rect key="frame" x="125" y="95" width="118" height="30"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="断开设备" backgroundImage="btn_red"/>
                                 <connections>
@@ -55,7 +55,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Gh-rb-W5K">
-                                <rect key="frame" x="125" y="133" width="245" height="30"/>
+                                <rect key="frame" x="149" y="328" width="180" height="30"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="获取实时直播视频信息" backgroundImage="btn_red"/>
                                 <connections>
@@ -87,7 +87,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bnm-OW-Pp4">
-                                <rect key="frame" x="1" y="328" width="348" height="30"/>
+                                <rect key="frame" x="1" y="328" width="140" height="30"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="获取设备设置" backgroundImage="btn_red"/>
                                 <connections>
@@ -195,6 +195,44 @@
                                     <action selector="imageValueCh:" destination="BYZ-38-t0r" eventType="valueChanged" id="EP1-YN-NsQ"/>
                                 </connections>
                             </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ddk-1v-uY1">
+                                <rect key="frame" x="252" y="95" width="118" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="重启设备" backgroundImage="btn_red"/>
+                                <connections>
+                                    <action selector="actionReactivateDevice:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bq0-3s-zm3"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="gLC-wV-wDq">
+                                <rect key="frame" x="1" y="171" width="369" height="29"/>
+                                <segments>
+                                    <segment title="录像状态"/>
+                                    <segment title="开始录像"/>
+                                    <segment title="结束录像"/>
+                                </segments>
+                                <connections>
+                                    <action selector="videoRecoderControl:" destination="BYZ-38-t0r" eventType="valueChanged" id="jMx-bB-eLa"/>
+                                </connections>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VOQ-7b-U74">
+                                <rect key="frame" x="125" y="133" width="117" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="启动自动连接" backgroundImage="btn_red"/>
+                                <connections>
+                                    <action selector="startAutoConnet:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wpT-S6-qaT"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="1R0-Eb-0i3">
+                                <rect key="frame" x="1" y="207" width="369" height="29"/>
+                                <segments>
+                                    <segment title="前摄像头"/>
+                                    <segment title="后摄像头"/>
+                                    <segment title="查询"/>
+                                </segments>
+                                <connections>
+                                    <action selector="actionCameraSwitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="9ON-cn-tUZ"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -206,7 +244,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1358.5" y="256.5"/>
+            <point key="canvasLocation" x="-2177.5" y="152.5"/>
         </scene>
     </scenes>
     <resources>

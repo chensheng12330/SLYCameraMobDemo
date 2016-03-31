@@ -360,7 +360,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Shanghai Jinqiao Export Processing Zone Development Co.,LTD";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Shanghai Jinqiao Export Processing Zone Development Co.,LTD";
-				HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/include/SLYCameraMob/ ";
+				HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/include/SLYCameraMob/";
 				INFOPLIST_FILE = SLYCameraMobDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
