@@ -134,7 +134,7 @@
 
 
 - (IBAction)btnGetFileList:(id)sender {
-    [SLYDevMan asyncGetFileListWithCount:30 From:0];
+    [SLYDevMan asyncGetFileListWithCount:20 From:0];
 }
 
 - (void)didGetFileList:(NSArray*)fileList

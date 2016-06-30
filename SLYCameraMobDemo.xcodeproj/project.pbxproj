@@ -17,21 +17,21 @@
 		588C9B2E1C50F20B00A18605 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 588C9B2D1C50F20B00A18605 /* CFNetwork.framework */; };
 		588C9B301C50F21600A18605 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 588C9B2F1C50F21600A18605 /* SystemConfiguration.framework */; };
 		588C9B321C50F23300A18605 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 588C9B311C50F23300A18605 /* libxml2.tbd */; };
-		58B2BEA21C5209C7002BCABA /* libSLYCameraMob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 588C9B281C50F08000A18605 /* libSLYCameraMob.a */; };
 		58B2BEA41C5209F7002BCABA /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58B2BEA31C5209F7002BCABA /* ImageIO.framework */; };
+		58B9594F1D1A4058005A9E7E /* libSLYCameraMob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 58B9594C1D1A3E36005A9E7E /* libSLYCameraMob.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		588C9B271C50F08000A18605 /* PBXContainerItemProxy */ = {
+		58B9594B1D1A3E36005A9E7E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 588C9B231C50F08000A18605 /* SLYCameraMob.xcodeproj */;
+			containerPortal = 58B959461D1A3E36005A9E7E /* SLYCameraMob.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 587C97DC1C4F2B9D00F91673;
 			remoteInfo = SLYCameraMob;
 		};
-		588C9B291C50F08F00A18605 /* PBXContainerItemProxy */ = {
+		58B9594D1D1A4050005A9E7E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 588C9B231C50F08000A18605 /* SLYCameraMob.xcodeproj */;
+			containerPortal = 58B959461D1A3E36005A9E7E /* SLYCameraMob.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 587C97DB1C4F2B9D00F91673;
 			remoteInfo = SLYCameraMob;
@@ -49,12 +49,12 @@
 		588C9B181C50F06700A18605 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		588C9B1B1C50F06700A18605 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		588C9B1D1C50F06700A18605 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		588C9B231C50F08000A18605 /* SLYCameraMob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SLYCameraMob.xcodeproj; path = ../../../SLYCameraMob/SLYCameraMob.xcodeproj; sourceTree = "<group>"; };
 		588C9B2B1C50F20000A18605 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		588C9B2D1C50F20B00A18605 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		588C9B2F1C50F21600A18605 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		588C9B311C50F23300A18605 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
 		58B2BEA31C5209F7002BCABA /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		58B959461D1A3E36005A9E7E /* SLYCameraMob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SLYCameraMob.xcodeproj; path = ../../slycameramob/SLYCameraMob.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,8 +62,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58B9594F1D1A4058005A9E7E /* libSLYCameraMob.a in Frameworks */,
 				58B2BEA41C5209F7002BCABA /* ImageIO.framework in Frameworks */,
-				58B2BEA21C5209C7002BCABA /* libSLYCameraMob.a in Frameworks */,
 				588C9B321C50F23300A18605 /* libxml2.tbd in Frameworks */,
 				588C9B301C50F21600A18605 /* SystemConfiguration.framework in Frameworks */,
 				588C9B2E1C50F20B00A18605 /* CFNetwork.framework in Frameworks */,
@@ -103,6 +103,7 @@
 				588C9B121C50F06700A18605 /* ViewController.h */,
 				588C9B131C50F06700A18605 /* ViewController.m */,
 				588C9B151C50F06700A18605 /* Main.storyboard */,
+				58B959461D1A3E36005A9E7E /* SLYCameraMob.xcodeproj */,
 				588C9B181C50F06700A18605 /* Assets.xcassets */,
 				58B2BEA91C521A13002BCABA /* resource */,
 				588C9B0C1C50F06700A18605 /* Supporting Files */,
@@ -113,17 +114,8 @@
 		588C9B0C1C50F06700A18605 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				588C9B231C50F08000A18605 /* SLYCameraMob.xcodeproj */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		588C9B241C50F08000A18605 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				588C9B281C50F08000A18605 /* libSLYCameraMob.a */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		58B2BEA91C521A13002BCABA /* resource */ = {
@@ -134,6 +126,14 @@
 				588C9B1D1C50F06700A18605 /* Info.plist */,
 			);
 			name = resource;
+			sourceTree = "<group>";
+		};
+		58B959471D1A3E36005A9E7E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				58B9594C1D1A3E36005A9E7E /* libSLYCameraMob.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,7 +150,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				588C9B2A1C50F08F00A18605 /* PBXTargetDependency */,
+				58B9594E1D1A4050005A9E7E /* PBXTargetDependency */,
 			);
 			name = SLYCameraMobDemo;
 			productName = SLYCameraMobDemo;
@@ -184,8 +184,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 588C9B241C50F08000A18605 /* Products */;
-					ProjectRef = 588C9B231C50F08000A18605 /* SLYCameraMob.xcodeproj */;
+					ProductGroup = 58B959471D1A3E36005A9E7E /* Products */;
+					ProjectRef = 58B959461D1A3E36005A9E7E /* SLYCameraMob.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -196,11 +196,11 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		588C9B281C50F08000A18605 /* libSLYCameraMob.a */ = {
+		58B9594C1D1A3E36005A9E7E /* libSLYCameraMob.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libSLYCameraMob.a;
-			remoteRef = 588C9B271C50F08000A18605 /* PBXContainerItemProxy */;
+			remoteRef = 58B9594B1D1A3E36005A9E7E /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -232,10 +232,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		588C9B2A1C50F08F00A18605 /* PBXTargetDependency */ = {
+		58B9594E1D1A4050005A9E7E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SLYCameraMob;
-			targetProxy = 588C9B291C50F08F00A18605 /* PBXContainerItemProxy */;
+			targetProxy = 58B9594D1D1A4050005A9E7E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -358,8 +358,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Shanghai Jinqiao Export Processing Zone Development Co.,LTD";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Shanghai Jinqiao Export Processing Zone Development Co.,LTD";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/include/SLYCameraMob/";
 				INFOPLIST_FILE = SLYCameraMobDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
